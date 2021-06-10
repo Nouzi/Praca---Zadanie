@@ -1,7 +1,237 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*,*::before,*::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+header {
+  width: 100%;
+  font-size: 100%;
+  height: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  // First Navigation bar
+
+  .firstNav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(76, 117, 137, 0.25);
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 1em;
+    width: 100%;
+    font-size: 0.7em;
+
+    // Možnosti na presmerovanie
+    li {
+      margin: 0 0.5em;
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: Helvetica Neue;
+        color: #0f3b55;
+      }
+
+      //   Lock icon + Login možnosť
+      &:last-child {
+        font-size: 1.2em;
+        margin: 0 15% 0 0;
+
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  // Second Navigation bar
+
+  .secondNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(77, 77, 77, 0.15);
+    margin: 0 auto;
+    padding: 0.7em;
+    width: 100%;
+    height: 4.2em;
+
+    // logo
+    img {
+      width: 9, 71975em;
+      height: auto;
+      left: 10%;
+      position: absolute;
+    }
+
+    // home icon
+    a {
+      color: #73be45;
+      text-decoration: none;
+      margin-right: 0.5em;
+    }
+
+    // ostatné možnosti
+    li {
+      margin: 0 1em;
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: #0f3b55;
+        font-size: 100%;
+        margin-right: 0;
+        font-family: Helvetica Neue;
+      }
+    }
+
+    // Tlačítko pre demo
+    button {
+      background-color: #73be45;
+      border-radius: 0.5em;
+
+      border: none;
+
+      right: 16%;
+      position: absolute;
+      padding: 0.7em 1em;
+
+      //   Vnútorná časť tlačítka
+      a {
+        color: white;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Tlačítko
+.mainButton {
+  background-color: #73be45;
+  border-radius: 0.5em;
+
+  border: none;
+
+  right: 16%;
+  padding: 0.7em 1em;
+
+  //   Vnútro tlačítka
+  a {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+  }
+}
+
+// Main layout
+
+main {
+  background-color: rgba(76, 117, 137, 0.25);
+  width: 100%;
+}
+
+// Grid systém s dvoma článkami
+.mainPart {
+  max-width: 100%;
+  height: 500px;
+  //   background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  padding: 3em 0;
+}
+
+// Prvá časť gridu | Ľavá časť
+.firstMainPart {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30%;
+
+  //   Hlavný text
+  .mainText {
+    font-size: 3em;
+    font-family: Helvetica Neue;
+    font-weight: 500;
+    margin: 0 0 0.2em 0;
+    width: 70%;
+    color: rgba(15, 59, 85, 0.8);
+
+    // Zvýraznený text
+    span {
+      text-decoration: underline dashed;
+      color: rgba(4, 27, 39, 0.863);
+    }
+
+    // SVG vlajka
+    svg {
+      width: 1em;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+
+  //   Menej podstatný text | Pod hlavným textom
+  .secondaryText {
+    font-size: 1em;
+    font-family: Helvetica Neue;
+    font-weight: 400;
+    margin: 0 15em 0.6em 0;
+    width: 100%;
+
+    color: #4c7589;
+  }
+}
+
+// Druhá časť gridu | Pravá časť
+.secondMainPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 0px 4px 15px rgba(77, 77, 77, 0.15);
+
+  height: 60%;
+  width: 70%;
+  margin: 0 auto 0 0;
+
+  //   SVG Logo
+  i {
+    color: #73be45;
+    font-weight: 100;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+  }
+
+  //   Text pod SVG Logom | Vo vnútri pravého Gridu
+  p {
+    color: #73be45;
+    margin-top: 0;
+    width: 45%;
+    text-align: center;
+  }
 }

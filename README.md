@@ -5,6 +5,8 @@
 - Vytvorený prvý a druhý navigačný bar
 - Importované Font Awesome CSS štýly
 - Vytvorené samostatné triedy pre každý navigačný bar
+- Vytvorený Grid systém pre dva objekty rovnakej veľkosti
+- Upravené objekty v Gride, aby vypadali ako na návrhu
 
 # Využité rechnológie
 

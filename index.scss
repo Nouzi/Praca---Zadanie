@@ -14,10 +14,6 @@ html {
   clear: both;
 }
 
-body {
-  background-color: #e5e5e5;
-}
-
 header {
   width: 100%;
   font-size: 100%;
@@ -81,7 +77,7 @@ header {
     img {
       width: 9, 71975em;
       height: auto;
-      left: 10%;
+      left: 15%;
       position: absolute;
     }
 
@@ -151,8 +147,8 @@ main {
   width: 100%;
 }
 
-// Grid systém s dvoma článkami
-.mainPart {
+// Grid systém s dvoma článkami | Prvá hlavná časť
+.mainPartOne {
   max-width: 100%;
   height: 500px;
   //   background-color: transparent;
@@ -182,6 +178,7 @@ main {
     span {
       text-decoration: underline dashed;
       color: rgba(4, 27, 39, 0.863);
+      font-family: Helvetica Neue;
     }
 
     // SVG vlajka
@@ -215,11 +212,11 @@ main {
   border-radius: 1em;
   box-shadow: 0px 4px 15px rgba(77, 77, 77, 0.15);
 
-  height: 60%;
-  width: 70%;
-  margin: 0 auto 0 0;
+  height: 15.1em;
+  width: 30.5em;
+  margin: 0 auto 0 1.5em;
 
-  //   SVG Logo
+  //   Font Awesome
   i {
     color: #73be45;
     font-weight: 100;
@@ -233,5 +230,782 @@ main {
     margin-top: 0;
     width: 45%;
     text-align: center;
+    font-family: Helvetica Neue;
+  }
+}
+
+// Druhá časť | menej podstatná
+
+.mainPartTwo {
+  width: 100%;
+  height: 12.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f3b55;
+}
+
+// Content inside
+.partTwoContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  height: 30%;
+  &:nth-child(2) {
+    width: 27%;
+  }
+
+  //   Font Awesome
+  i {
+    align-self: flex-start;
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+  }
+
+  //   Text inside
+  p {
+    font-size: 1em;
+    color: white;
+    margin: 0 0 0 0.5em;
+    width: 50%;
+    height: 100%;
+    text-align: start;
+    font-family: Helvetica Neue;
+  }
+}
+
+// Tretia časť | Podstatná
+.mainPartThree {
+  width: 100%;
+  background-color: white;
+  height: auto;
+  padding: 0em;
+
+  //   Nadpis
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 2.5em;
+    font-family: Helvetica Neue;
+  }
+}
+
+// Ikonka + Text
+.partThreeContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 5em auto 5em auto;
+
+  //   Hodnota pre posledný riadok
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 12em;
+  }
+
+  //   SVG Ikonka
+  svg {
+    width: 20em;
+    height: auto;
+    margin-right: 5em;
+  }
+
+  //   Hlavný text
+  .partThreeText {
+    h2 {
+      font-size: 2em;
+      margin: 0;
+      color: #73be45;
+      font-family: Helvetica Neue;
+    }
+
+    // Vedlajší text
+    p {
+      font-size: 1.1em;
+      font-family: Helvetica Neue;
+    }
+  }
+}
+
+// Formulár medz Treťou a Štvrtou časťou
+
+// Formulár
+.newsLetterLayout {
+  top: 181%;
+  width: 48.5em;
+  height: 10.6em;
+  padding: 0em 1em;
+
+  background-color: #0f5d98;
+  border-radius: 0.7em;
+  position: absolute;
+  display: flex;
+}
+
+// Ľavá časť formuláru
+.newsLetterLeftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+
+  svg {
+    height: auto;
+    width: 7em;
+    background-color: white;
+
+    padding: 1em;
+    margin: 0 1em 0 0;
+
+    border-radius: 0.7em;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.2em;
+    width: 55%;
+    font-family: Helvetica Neue;
+  }
+}
+
+// Rozdelenie v newslettery
+.newsLetterDivider {
+  height: 75%;
+  margin: auto 1em;
+}
+
+// Pravá strana newsletteru
+.newsLetterRightSide {
+  width: 60%;
+  align-self: center;
+}
+
+// Vyplnenie pre E-mail | Pravá strána
+.newsLetterInput {
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  input {
+    width: 100%;
+    height: 4em;
+    border-radius: 0.7em;
+    border: 0;
+    outline-style: none;
+  }
+}
+
+// Checkbox + text
+.newsLetterCheckBox {
+  display: flex;
+  vertical-align: middle;
+  margin-top: 0.5em;
+
+  input {
+    margin: 0 0.5em 0 0;
+  }
+}
+// Text použitý v oboch Checkboxoch
+.checkBoxText {
+  margin: 0;
+  color: white;
+  font-size: 0.75em;
+  width: 100%;
+
+  a {
+    color: white;
+  }
+}
+
+// Input použitý v oboch Checkboxoch
+
+.inputButton {
+  background-color: #73be45;
+  border-radius: 0.5em;
+  border: none;
+
+  padding: 1.15em;
+  width: 8em;
+
+  position: absolute;
+  right: 1.5em;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+// Štvrtá časť
+.mainPartFour {
+  width: 100%;
+  height: auto;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+}
+
+// Ďalšia časť pod newsletter formulárom
+.mainFeatures {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50em;
+  padding: 9em 9em 0 9em;
+  background-color: transparent;
+}
+
+// Nadpis v hlavných funkciách
+.mainFeaturesHeader {
+  color: #0f3b55;
+  margin: 0;
+  font-size: 2em;
+}
+
+// ľavá časť hlavných funkcii
+.mainFeaturesLeftSide {
+  width: 100%;
+
+  li {
+    display: flex;
+
+    list-style-type: none;
+    align-items: center;
+    height: 3em;
+
+    &:nth-child(2) {
+      color: #73be45;
+
+      h2 {
+        font-family: Helvetica Neue;
+
+        color: #73be45;
+      }
+    }
+
+    h2 {
+      font-family: Helvetica Neue;
+
+      color: #4c7589;
+      margin-left: 0.5em;
+      font-size: 1.5em;
+    }
+  }
+}
+
+// Pravá strana hlavných funkcii
+.mainFeaturesRightSide {
+  width: 100%;
+}
+
+// Vnútorné rozdelenie pravej strany
+.mainFeaturesRightSideLayout {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(77, 77, 77, 0.15);
+
+  width: 80%;
+  height: 14em;
+  border-radius: 0.5em;
+
+  margin: 0 auto;
+  padding: 1em 1.5em;
+
+  h1 {
+    margin: 0.3em 0 0 0;
+    color: #73be45;
+    font-family: Helvetica Neue;
+  }
+
+  p {
+    margin: 0;
+    color: #4c7589;
+    font-family: Helvetica Neue;
+  }
+}
+
+// Rozloženie tlačítok v pravej strane
+.mainFeaturesRightSideButtonLayout {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  i {
+    color: white;
+
+    &:first-child {
+      margin-right: 0.5em;
+    }
+
+    &:last-child {
+      margin-left: 0.5em;
+    }
+  }
+}
+
+// Piata hlavná časť
+.mainPartFive {
+  width: 100%;
+  height: 800px;
+
+  background-color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 0 3em 0;
+
+  // Nadpis v Piatej časti
+  .mainPartFiveHeader {
+    margin: 0;
+    padding: 1em 0;
+    color: #0f3b55;
+    font-family: Helvetica Neue;
+
+    width: 100%;
+    text-align: center;
+  }
+}
+
+// Rozloženie ponúk
+.planOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+// Prvé 3 ponuky
+.planVersionOne {
+  border: 2px solid #0f5d98;
+  width: 18em;
+  padding: 0 1em;
+  margin: 0 0.5em;
+  height: 34em;
+
+  background-color: white;
+
+  border-radius: 0.5em;
+
+  &:nth-child(n + 2) {
+    .planOptionButton {
+      margin: 2em 0 1em 0;
+    }
+  }
+
+  .red-color {
+    color: red;
+  }
+
+  // Hlavný nadpis v ponuke
+  h1 {
+    color: #0f5d98;
+    font-size: 2em;
+    margin: 0.5em 0;
+    font-family: Helvetica Neue;
+  }
+
+  // Pod nadpis v ponuke
+  h2 {
+    color: #4c7589;
+    font-size: 1.4em;
+    font-family: Helvetica Neue;
+  }
+
+  // Cena za mesiac na 1 osobu
+  h3 {
+    color: #0f3b55;
+    font-family: Helvetica Neue;
+
+    span {
+      color: #0f5d98;
+      font-size: 3em;
+      font-family: Helvetica Neue;
+    }
+  }
+
+  // Výhody ktoré dostaneme
+  li {
+    display: flex;
+    margin: 1em 0;
+    color: #73be45;
+
+    // Popis v nich
+    p {
+      color: #0f3b55;
+      margin: 0 0 0 0.5em;
+      font-family: Helvetica Neue;
+    }
+  }
+}
+
+// Tlačítko v ponukách
+.planOptionButton {
+  display: flex;
+  justify-content: center;
+  margin: 4em 0 1em 0;
+
+  button {
+    background-color: #73be45;
+    border-radius: 0.5em;
+
+    border: none;
+
+    padding: 1em 2em;
+
+    //   Vnútro tlačítka
+    a {
+      color: white;
+      margin: 0;
+      text-decoration: none;
+    }
+  }
+}
+
+// Posledná 4. ponuka
+.planVersionTwo {
+  border: 2px solid #0f5d98;
+  width: 19em;
+  height: 36em;
+  padding: 0 1em;
+  margin: 0 0.5em;
+
+  background: #0f5d98;
+  border-radius: 0.5em;
+  box-shadow: -15px 25px 40px rgba(16, 59, 85, 0.18);
+
+  // Hlavný nadpis v ponuke
+
+  h1 {
+    font-size: 2em;
+    margin: 1em 0 0.5em 0;
+    color: white;
+    font-family: Helvetica Neue;
+  }
+
+  // Pod nadpis v ponuke
+
+  h2 {
+    font-size: 1.4em;
+    color: white;
+    font-family: Helvetica Neue;
+  }
+
+  // Cena za mesiac na 1 osobu
+
+  h3 {
+    color: white;
+    font-family: Helvetica Neue;
+
+    span {
+      color: white;
+      font-family: Helvetica Neue;
+
+      font-size: 3em;
+    }
+  }
+
+  // Výhody ktoré dostaneme
+
+  li {
+    display: flex;
+    margin: 1em 0;
+    color: #73be45;
+
+    // Popis v nich
+
+    p {
+      margin: 0 0 0 0.5em;
+      color: white;
+      font-family: Helvetica Neue;
+    }
+  }
+
+  // Tlačítko v poslednej ponuke
+
+  .planOptionButton {
+    margin: 3.5em 0 1em 0;
+  }
+}
+
+// Šiesta časť
+.mainPartSix {
+  width: 100%;
+  height: 22em;
+  background: wheat;
+}
+
+// Formulár pre požiadanie o demo
+.RequestFormDemo {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+// Ľavá strana | Info o osobe
+.RequestFormDemoLeftSide {
+  display: flex;
+  width: 100%;
+
+  background: rgba(76, 117, 137, 0.25);
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 3em 0 0 5em;
+}
+
+//  Ľavá časť content
+.RequestFormLeftSideContent {
+  h1 {
+    margin: 1em 0 0.2em 0;
+    color: #0f5d98;
+    font-family: Helvetica Neue;
+  }
+
+  h2 {
+    margin: 0 0 0.2em 0;
+    color: #0f5d98;
+    font-family: Helvetica Neue;
+  }
+
+  a {
+    color: #0f5d98;
+  }
+}
+
+// Pravá strana | Formulár pre poslanie dema
+
+.RequestFormDemoRightSide {
+  display: flex;
+  flex-direction: column;
+  background: rgba(76, 117, 137, 0.25);
+  padding: 3em 0 0 0;
+  width: 100%;
+}
+
+// Prvý riadok na pravej strane
+.RequestFormDemoRightSideFirstLayer {
+  display: flex;
+  background-color: white;
+
+  width: 70%;
+  height: 3.125em;
+
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+
+  border: 1px solid #869bab;
+
+  p {
+    margin: 1em;
+    font-family: Helvetica Neue;
+  }
+
+  // Prvé tlačítko v prvom riadku
+  .RequestFormDemoRightSideFirstLayerButtonOne {
+    background: #0f5d98;
+    border: 1px solid rgba(15, 93, 152, 0.15);
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  button {
+    margin-right: 0.5em;
+    border-radius: 0.5em;
+    margin: 0.3em 0.5em 0.3em 0;
+    background: white;
+    border: 1px solid rgba(15, 93, 152, 0.15);
+  }
+
+  a {
+    text-decoration: none;
+    color: #0f5d98;
+  }
+}
+
+// Druhý riadok na pravej strane
+.RequestFormDemoRightSideSecondLayer {
+  display: flex;
+  width: 70%;
+  height: 3.75em;
+
+  justify-content: space-between;
+}
+
+// Input v druhom riadku
+.RequestFormDemoRightSideSecondLayerInput {
+  display: flex;
+  width: 49%;
+  height: 3.75em;
+  padding: 0.3em;
+  outline: none;
+  border-radius: 0.5em;
+  border: 1px solid #869bab;
+  p {
+    margin-right: 1em;
+  }
+}
+
+// Tretí riadok na pravej strane + input
+.RequestFormDemoRightSideThirdLayerInput {
+  display: flex;
+  width: 70%;
+  height: 3.75em;
+  outline: none;
+  border-radius: 0.5em;
+
+  border: 1px solid #869bab;
+}
+
+// Štvrtý riadok na pravej strane
+.RequestFormDemoRightSideForthLayer {
+  display: flex;
+  width: 70%;
+  height: 2.5em;
+  align-items: center;
+
+  p {
+    margin: 0;
+    font-family: Helvetica Neue;
+  }
+
+  a {
+    color: #4c7589;
+  }
+}
+
+// Piaty riadok na pravej strane
+.RequestFormDemoRightSideFifthLayer {
+  display: flex;
+  width: 70%;
+  height: 3em;
+}
+
+// Tlačítko na požiadanie o demo
+.requestFormButton {
+  background-color: #0f5d98;
+  border-radius: 0.5em;
+
+  border: none;
+
+  padding: 0.7em 1em;
+
+  //   Vnútro tlačítka
+  a {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+  }
+}
+
+// Siedma časť
+.mainPartSeven {
+  width: 100%;
+  height: 250px;
+
+  background-color: white;
+
+  padding: 2em;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+}
+
+// Ľavá časť na siedmej strane
+.mainPartSevenLeftSide {
+  display: flex;
+  padding-left: 25%;
+
+  img {
+    height: auto;
+    width: 12em;
+  }
+}
+
+//  Pravá časť na siedmej strane + využitý newsletter,
+//   ktorý bol použitý medz 3. a 4. časťou
+.mainPartSevenRightSide {
+  .newsLetterRightSide {
+    .newsLetterInput {
+      border: 1px solid #869bab;
+      border-radius: 0.5em;
+    }
+    h1 {
+      font-family: Helvetica Neue;
+
+      margin: 0 0 0.5em 0;
+      font-size: 1em;
+      color: #0f3b55;
+    }
+  }
+
+  .inputButton {
+    right: 22%;
+  }
+
+  .checkBoxText {
+    font-size: 0.8em;
+    color: #4c7589;
+    a {
+      color: #4c7589;
+    }
+  }
+}
+
+// Osma časť
+.mainPartEight {
+  width: 90%;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0 5em;
+  margin: 0 auto;
+
+  background: white;
+
+  border: 0.15em dashed rgba(15, 93, 152, 0.15);
+  border-left: 0;
+  border-right: 0;
+
+  a {
+    color: #0f5d98;
+  }
+}
+
+// Deviata časť
+.mainPartNine {
+  background: white;
+  color: #979797;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1em 11%;
+}
+
+// Linky v deviatej časti | pravá strana
+.mainPartNineLinks {
+  display: flex;
+  align-items: center;
+  a {
+    color: #979797;
+    margin-right: 1em;
   }
 }
